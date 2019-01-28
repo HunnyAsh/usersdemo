@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Users Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&amp;subset=greek,vietnamese" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main">
+    <header>
+        <div class="header">
+            <h1>Users Demo</h1>
+        </div>
+    </header>
+    <section>
+        <form id="#userForm" method="post" name="userForm">
+            <div class="row">
+                <div class="col">
+                        <label for="fname">First Name</label>
+                </div>
+                        <input class="ip" type="text" name="fname" id="fname" placeholder="First Name">
+            </div>
+            <div class="row">
+                <div class="col">
+                        <label for="mname">Middle Name</label>
+                </div>
+                        <input type="text" class="ip" name="mname" id="mname" placeholder="Middle Name" >
+            </div>
+            <div class="row">
+                <div class="col">
+                        <label for="lname">Last Name</label>
+                </div>
+                        <input type="text" class="ip" name="lname" id="lname" placeholder="Last Name">
+            </div>
+            <div class="row">
+                <div class="col">
+                        <label for="email">Email</label>
+                </div>
+                        <input type="email" class="ip" name="email" id="email" placeholder="someone@mail.com">
+            </div>
+            <div class="row">
+                <div class="col">
+                        <label for="password">Password</label>
+                </div>
+                        <input type="password" class="ip" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="row">
+                    <div class="col">
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="col">
+                        <label for="male">Male</label>
+                        <input type="radio"  name="gender" id="male" value="male">
+                    </div>
+                    <div class="col">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col">   
+                        <label for="hobbies">Hobbies</label>
+                    </div>
+                    <div class="col">   
+                        <textarea rows=4 cols=20 id="hobbies" name="hobbies" placeholder="Enter Hobbies Here..."></textarea>
+                    </div>
+            </div>
+            <div class="row">
+                    <button type="submit" class="btn-center">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section id="userTable">
+            <div class="row">
+                    <header>
+                            <div class="header">
+                                <h1 style="color:#eeeee0;margin-left: -80px">Users List</h1>
+                            </div>
+                        </header>
+            </div>
+            <div class="row">
+                    <table id="usersInfo">
+                            <thead>
+                                <th>First Name</th>
+                                <th>Middle Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>Hobbies</th>
+                                <th>Password</th>
+                            </thead>
+                            <tbody>
+                
+                            </tbody>
+                        </table>
+            </div>
+    </section>
+</div>
+    <!-- Scripts To USe -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
