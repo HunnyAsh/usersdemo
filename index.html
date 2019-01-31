@@ -21,31 +21,46 @@
                 <div class="col">
                         <label for="fname">First Name</label>
                 </div>
+                <div class="col">
                         <input class="ip" type="text" name="fname" id="fname" placeholder="First Name">
+                        <span class="error">First name invalid!!</span>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                         <label for="mname">Middle Name</label>
                 </div>
+                <div class="col">
                         <input type="text" class="ip" name="mname" id="mname" placeholder="Middle Name" >
+                        <span class="error">MiddleName Invalid</span>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                         <label for="lname">Last Name</label>
                 </div>
+                <div class="col">
                         <input type="text" class="ip" name="lname" id="lname" placeholder="Last Name">
+                        <span class="error">This field is required</span>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                         <label for="email">Email</label>
                 </div>
-                        <input type="email" class="ip" name="email" id="email" placeholder="someone@mail.com">
+                <div class="col">
+                        <input type="text" class="ip" name="email" id="email" placeholder="someone@mail.com">
+                        <span class="error">Enter Valid Email</span>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                         <label for="password">Password</label>
                 </div>
+                <div class="col">
                         <input type="password" class="ip" name="password" id="password" placeholder="Password">
+                        <span class="error">Min length 6</span>
+                </div>
             </div>
             <div class="row">
                     <div class="col">
@@ -59,17 +74,32 @@
                         <label for="female">Female</label>
                         <input type="radio" name="gender" id="female" value="female">
                     </div>
+                    <span class="error">Please Select Gender</span>
+            </div>
+            <div class="row">
+                <div class="col">   
+                    <label for="city">City</label>
+                </div>
+                <div class="col">   
+                    <select name="city" id="city">
+                        <option value="" disabled selected>Please Select Value</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Baroda">Baroda</option>
+                    </select>
+                </div>
             </div>
             <div class="row">
                     <div class="col">   
                         <label for="hobbies">Hobbies</label>
                     </div>
                     <div class="col">   
-                        <textarea rows=4 cols=20 id="hobbies" name="hobbies" placeholder="Enter Hobbies Here..."></textarea>
+                        <textarea rows=4 cols=20  id="hobbies" name="hobbies" placeholder="Enter Hobbies Here..."></textarea>
+                        <span class="error">Enter hobbies</span>
                     </div>
             </div>
             <div class="row">
-                    <button type="submit" class="btn-center">Submit</button>
+                    <button type="submit" disabled id="submit" class="btn-center enableOnInput">Submit</button>
             </div>
         </form>
     </section>
@@ -89,11 +119,10 @@
                                 <th>Last Name</th>
                                 <th>Email</th>
                                 <th>Gender</th>
+                                <th>City</th>
                                 <th>Hobbies</th>
-                                <th>Password</th>
                             </thead>
                             <tbody>
-                
                             </tbody>
                         </table>
             </div>
@@ -101,6 +130,6 @@
 </div>
     <!-- Scripts To USe -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

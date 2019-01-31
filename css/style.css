@@ -7,7 +7,7 @@ body{
     background-color: #008B8B;
 }
 div.main{
-    height: 500px;
+    height: 550px;
     border: 2px solid  #bbdefb;
     border-radius: 20px;
     width: 500px;
@@ -16,6 +16,13 @@ div.main{
     background-color: #eeeee0;
     border-radius : 10px 0px 10px 0px;
     margin-top: 100px;
+}
+select{
+    width: 310px;
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
 }
 label {
     color: black;
@@ -36,6 +43,14 @@ div.col{
     height: 40px;
     text-align: left;
     font-weight: 900;
+}
+span.error{
+    display: none;
+    float: right;
+}
+span.error_show{
+    color: red;
+    margin-top:0px;
 }
 .ip{
     float: left;
